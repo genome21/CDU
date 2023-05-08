@@ -1,7 +1,7 @@
 # Continuous Dependency Updating (CDU)
 [![Update devcontainer.json](https://github.com/genome21/CDU/actions/workflows/update_devcontainer.yml/badge.svg)](https://github.com/genome21/CDU/actions/workflows/update_devcontainer.yml)
 
-<img src="./assets/15.png" width="125" height="125">
+<img src="./assets/18.png" width="125" height="125">
 
 Explore Continuous Dependency Updating (CDU), a cutting-edge CI/CD practice for keeping your software dependencies up-to-date. This repository provides comprehensive documentation, examples, and best practices to enhance your project's stability, security, and maintainability using CDU and modern CI/CD tools.
 
