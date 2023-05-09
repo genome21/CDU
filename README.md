@@ -3,7 +3,13 @@
 
 <img src="./assets/18.png" width="125" height="125">
 
-Explore Continuous Dependency Updating (CDU), a cutting-edge CI/CD practice for keeping your software dependencies up-to-date. This repository provides comprehensive documentation, examples, and best practices to enhance your project's stability, security, and maintainability using CDU and modern CI/CD tools.
+This repository introduces the concept of Continuous Dependency Updating (CDU), a modern software development practice that aims to keep dependencies up-to-date, ensuring that applications benefit from the latest security patches, vulnerability fixes, performance improvements, and compatibility enhancements.
+
+For an in-depth analysis of Continuous Dependency Updating, please refer to the following technical paper located in this repository:
+
+CDU: A Modern DevOps Practice (cdu-a-modern-devops-practice.pdf)
+
+This paper provides a comprehensive understanding of the benefits, drawbacks, and implementation strategies of CDU, as well as discussing the legal, security, and human resources aspects associated with adopting this practice.
 
 ## Table of Contents
 
