@@ -19,6 +19,6 @@ This folder contains examples of Continuous Dependency Updating (CDU) implemente
 
 To use one of the CDU examples, copy the corresponding YAML file to your project's `.github/workflows` folder and customize it as needed. Ensure that you adjust the file paths, package manager configurations, and other project-specific settings to match your project's structure and requirements.
 
-**Important**: Remember to replace any placeholder text, such as `YourSolution.sln`, `your-app-name`, or `your-test-command`, with the appropriate values for your project.
+> **Important**: Remember to replace any placeholder text, such as `YourSolution.sln`, `your-app-name`, or `your-test-command`, with the appropriate values for your project.
 
 After setting up the GitHub Action, it will run automatically according to the specified schedule, and you can also trigger it manually from the "Actions" tab in your GitHub repository.
