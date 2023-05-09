@@ -1,0 +1,42 @@
+name: Continuous Dependency Updating
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at 00:00 UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  update_dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 7.4
+        extensions: mbstring, intl # Add required PHP extensions here
+        coverage: none
+
+    - name: Install Composer
+      run: |
+        composer self-update
+
+    - name: Update dependencies
+      run: |
+        composer update
+        composer install
+
+    - name: Run tests
+      run: |
+        composer test
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add composer.lock
+        git commit -m "Update dependencies via CDU" || exit 0
+        git push
