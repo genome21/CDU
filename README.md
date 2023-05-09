@@ -41,9 +41,20 @@ One challenge with CDU is the risk of breaking changes being introduced by updat
 
 This repository contains a collection of examples showing how to implement CDU for various programming languages, dependency management systems, and CI/CD tools. Check the `examples` directory for sample configurations and scripts.
 
+- [C#](./examples/csharp) - CDU implementation for a C# project using .NET Core and NuGet for dependency management.
+- [C++](./examples/cpp) - CDU implementation for a C++ project using Conan as a package manager.
+- [Deno](./examples/deno) - CDU implementation for a Deno project using the deps.ts file for dependency management.
+- [Java](./examples/java) - CDU implementation for a Java project using Maven for dependency management.
+- [NodeJS](./examples/nodejs) - CDU implementation for a Node.js project using npm for dependency management.
+- [PHP](./examples/php) - CDU implementation for a PHP project using Composer for dependency management.
+- [Python](./examples/python) - CDU implementation for a Python project using pip for dependency management.
+- [Ruby](./examples/ruby) - CDU implementation for a Ruby project using Bundler for dependency management.
+- [Bash](./examples/bash) - CDU implementation for a Unix-like system using apt as the package manager.
+- [Typescript](./examples/typescript) - CDU implementation for a TypeScript project using npm for dependency management.
+
 ## Best Practices
 
-Our OpenSSF Best Practices can be found in the ["best-practices" repo](https://github.com/genome21/CDU/tree/main/best-practices). These guides cover key aspects to consider when implementing CDU in your project:
+Before implementing CDU in your project, consider the following best practices:
 
 - Always have a robust testing suite to catch potential issues introduced by dependency updates.
 - Set up notifications for your team to review the results of dependency updates and tests.
@@ -56,4 +67,4 @@ We welcome contributions to this repository! Please read our [CONTRIBUTING.md](C
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE.md).
+This repository is licensed under the [MIT License](LICENSE).
