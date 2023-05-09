@@ -43,7 +43,7 @@ This repository contains a collection of examples showing how to implement CDU f
 
 ## Best Practices
 
-Before implementing CDU in your project, consider the following best practices:
+Our OpenSSF Best Practices can be found in the ["best-practices" repo](https://github.com/genome21/CDU/tree/main/best-practices). These guides cover key aspects to consider when implementing CDU in your project:
 
 - Always have a robust testing suite to catch potential issues introduced by dependency updates.
 - Set up notifications for your team to review the results of dependency updates and tests.
@@ -56,4 +56,4 @@ We welcome contributions to this repository! Please read our [CONTRIBUTING.md](C
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE).
+This repository is licensed under the [MIT License](LICENSE.md).
