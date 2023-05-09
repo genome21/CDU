@@ -158,7 +158,7 @@ Integration tests assess the interactions between different components or module
 
 End-to-end tests validate the application's functionality from the user's perspective, ensuring that the complete system behaves as expected in real-world scenarios. These tests help identify potential issues that may not be caught by unit or integration tests, such as problems with the user interface, performance, or third-party services. By incorporating end-to-end tests in the testing suite, developers can gain a higher level of confidence that their application will continue to function correctly even as dependencies are updated.
 
-In summary, a robust testing suite is a critical component of successful CDU implementation. By having a comprehensive set of unit, integration, and end-to-end tests, developers can ensure that their application remains stable, functional, and compatible with the latest dependency versions. The tests also provide valuable feedback to guide decision-making during the dependency updating process, helping developers prioritize and address any issues that may arise.
+A robust testing suite is a critical component of successful CDU implementation. By having a comprehensive set of unit, integration, and end-to-end tests, developers can ensure that their application remains stable, functional, and compatible with the latest dependency versions. The tests also provide valuable feedback to guide decision-making during the dependency updating process, helping developers prioritize and address any issues that may arise.
 
 ## 3.2. Handling Code Modifications
 
@@ -264,7 +264,7 @@ CDU can also lead to increased maintenance effort, as developers need to constan
 - **Code updates**: As dependencies are updated, developers may need to modify their code to accommodate changes, such as updating APIs or replacing deprecated features. This can be a time-consuming process, especially when dealing with complex or extensive changes.
 - **Balancing priorities**: In CDU, developers must strike a balance between keeping dependencies up-to-date and focusing on feature development or other tasks. This can be a challenge, particularly in fast-paced development environments where resources are limited and priorities must be carefully managed.
 
-In summary, while CDU offers several benefits, it also presents potential challenges related to application stability and increased maintenance effort. It's essential to weigh these factors when considering whether to adopt CDU in your development process, and to implement strategies to mitigate these risks if you choose to do so.
+In short, while CDU offers several benefits, it also presents potential challenges related to application stability and increased maintenance effort. It's essential to weigh these factors when considering whether to adopt CDU in your development process, and to implement strategies to mitigate these risks if you choose to do so.
 
 # Legal, Security, and Human Resources Aspects
 
