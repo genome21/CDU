@@ -41,16 +41,16 @@ One challenge with CDU is the risk of breaking changes being introduced by updat
 
 This repository contains a collection of examples showing how to implement CDU for various programming languages, dependency management systems, and CI/CD tools. Check the `examples` directory for sample configurations and scripts.
 
-- [C#](./examples/csharp) - CDU implementation for a C# project using .NET Core and NuGet for dependency management.
-- [C++](./examples/cpp) - CDU implementation for a C++ project using Conan as a package manager.
-- [Deno](./examples/deno) - CDU implementation for a Deno project using the deps.ts file for dependency management.
-- [Java](./examples/java) - CDU implementation for a Java project using Maven for dependency management.
-- [NodeJS](./examples/nodejs) - CDU implementation for a Node.js project using npm for dependency management.
-- [PHP](./examples/php) - CDU implementation for a PHP project using Composer for dependency management.
-- [Python](./examples/python) - CDU implementation for a Python project using pip for dependency management.
-- [Ruby](./examples/ruby) - CDU implementation for a Ruby project using Bundler for dependency management.
-- [Bash](./examples/bash) - CDU implementation for a Unix-like system using apt as the package manager.
-- [Typescript](./examples/typescript) - CDU implementation for a TypeScript project using npm for dependency management.
+- [C#](./examples/csharp.yml) - CDU implementation for a C# project using .NET Core and NuGet for dependency management.
+- [C++](./examples/cpp.yml) - CDU implementation for a C++ project using Conan as a package manager.
+- [Deno](./examples/deno.yml) - CDU implementation for a Deno project using the deps.ts file for dependency management.
+- [Java](./examples/java.yml) - CDU implementation for a Java project using Maven for dependency management.
+- [NodeJS](./examples/nodejs.yml) - CDU implementation for a Node.js project using npm for dependency management.
+- [PHP](./examples/php.yml) - CDU implementation for a PHP project using Composer for dependency management.
+- [Python](./examples/python.yml) - CDU implementation for a Python project using pip for dependency management.
+- [Ruby](./examples/ruby.yml) - CDU implementation for a Ruby project using Bundler for dependency management.
+- [Bash](./examples/bash.yml) - CDU implementation for a Unix-like system using apt as the package manager.
+- [Typescript](./examples/typescript.yml) - CDU implementation for a TypeScript project using npm for dependency management.
 
 ## Best Practices
 
