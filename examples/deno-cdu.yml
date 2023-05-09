@@ -1,0 +1,39 @@
+name: Continuous Dependency Updating
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at 00:00 UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  update_dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
+    - name: Install deps.ts.updater
+      run: |
+        deno install -A --unstable -n deps.ts.updater https://deno.land/x/deps_ts_updater/mod.ts
+
+    - name: Update dependencies
+      run: |
+        deps.ts.updater --depsFile=deps.ts --write
+
+    - name: Run tests
+      run: |
+        deno test
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add deps.ts
+        git commit -m "Update dependencies via CDU" || exit 0
+        git push
