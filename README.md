@@ -7,7 +7,7 @@ This repository introduces the concept of Continuous Dependency Updating (CDU), 
 
 For an in-depth analysis of Continuous Dependency Updating, please refer to the following technical paper located in this repository:
 
-CDU: A Modern DevOps Practice (cdu-a-modern-devops-practice.pdf)
+[CDU: A Modern DevOps Practice](cdu-a-modern-devops-practice.pdf)
 
 This paper provides a comprehensive understanding of the benefits, drawbacks, and implementation strategies of CDU, as well as discussing the legal, security, and human resources aspects associated with adopting this practice.
 
