@@ -1,0 +1,43 @@
+name: Continuous Dependency Updating
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at 00:00 UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  update_dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Install build dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake
+
+    - name: Install Conan
+      run: |
+        curl -Lo conan.deb https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_40_3.deb
+        sudo dpkg -i conan.deb
+        conan user
+
+    - name: Update dependencies
+      run: |
+        conan install . --update --build=outdated
+        cmake .
+        cmake --build .
+
+    - name: Run tests
+      run: |
+        ctest
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add conanfile.txt
+        git commit -m "Update dependencies via CDU" || exit 0
+        git push
