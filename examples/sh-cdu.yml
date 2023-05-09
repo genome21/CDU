@@ -1,0 +1,32 @@
+name: Continuous Dependency Updating
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at 00:00 UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  update_dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Update system packages
+      run: |
+        sudo apt-get update
+        sudo apt-get upgrade -y
+
+    - name: Run shell script
+      run: |
+        chmod +x my_script.sh
+        ./my_script.sh
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update system packages via CDU" || exit 0
+        git push
